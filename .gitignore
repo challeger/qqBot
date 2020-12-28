@@ -130,3 +130,5 @@ dmypy.json
 
 # idea folder
 .idea
+qqBot/.env.*
+!/qqBot/.env.dev

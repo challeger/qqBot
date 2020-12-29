@@ -130,5 +130,6 @@ dmypy.json
 
 # idea folder
 .idea
-qqBot/.env.*
-!/qqBot/.env.dev
+/qqBot/.env.*
+/qqBot/.env.dev
+/qqBot/src/plugins/bilibili/userinfo.json

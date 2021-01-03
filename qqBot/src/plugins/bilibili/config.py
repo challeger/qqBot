@@ -30,8 +30,6 @@ now_path: str = __file__[:-9]
 USERINFO_PATH: str = now_path + 'userinfo.json'
 # 初始化时读取json文件里的数据,转为字典格式
 USERINFO: dict = ujson.load(open(USERINFO_PATH, encoding='utf-8'))
-# 测试是否登录时的DATA
-CHECK_DATA = {'bvid': 'BV1uv411q7Mv', 'like': 1, 'csrf': USERINFO['BILI_JCT']}
 # api.json文件所在的路径
 API_PATH: str = now_path + 'api.json'
 API_DICT: dict = ujson.load(open(API_PATH, encoding='utf-8'))

@@ -133,3 +133,4 @@ dmypy.json
 /qqBot/.env.*
 /qqBot/.env.dev
 /qqBot/src/plugins/bilibili/userinfo.json
+/qqBot/module_test.py

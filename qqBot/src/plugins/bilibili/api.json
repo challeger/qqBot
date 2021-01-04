@@ -1299,5 +1299,43 @@
         "comment": "获取分区前十排行榜"
       }
     }
+  },
+  "search": {
+    "all_search": {
+      "url": "http://api.bilibili.com/x/web-interface/search/all/v2",
+      "method": "GET",
+      "verify": false,
+      "params": {
+        "keyword": "搜索的关键字"
+      },
+      "comment": "综合搜索,可以展示各种类型的搜索结果"
+    },
+    "type_search": {
+      "url": "http://api.bilibili.com/x/web-interface/search/type",
+      "method": "GET",
+      "verify": false,
+      "params": {
+        "search_type": ["搜索目标类型",
+          {
+            "video": "视频",
+            "media_bangumi": "番剧",
+            "media_ft": "影视",
+            "live": "直播间及主播",
+            "live_room": "直播间",
+            "article": "专栏",
+            "topic": "话题",
+            "bili_user": "用户",
+            "photo": "相簿"
+          }],
+        "keyword": "搜索的关键字",
+        "order": "结果排序方式",
+        "order_sort": "用户粉丝数及等级排序顺序",
+        "user_type": "用户分类筛选",
+        "duration": "视频时长筛选",
+        "tids": "视频分区筛选",
+        "category_id": "专栏及相簿分区筛选",
+        "page": "页码"
+      }
+    }
   }
 }

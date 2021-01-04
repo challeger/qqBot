@@ -26,3 +26,5 @@ nonebot2, ujson, bs4, httpx
 封装了httpx的request方法,实现get,post,delete三个高层api.
 
 完成了登录验证以及登录鉴权装饰器
+
+**2021.01.04** 完成了查看用户信息与查看个人信息两个接口;在api.json中新增search相关的api,完成了search底层接口与番剧搜索的接口,但因为神秘力量导致返回的消息被吞,无法得到正确的搜索结果.
